@@ -40,34 +40,31 @@ public class Drone extends Agent {
 		if (x < 0) moveRight(1);
 		if (y > 768) moveUp(1);
 		if (y < 0) moveDown(1);
-		move();
-//		if((x<= 1024 && x>=0)&&(y<=768 && y>=0)){
-////			setImagePosition(x, y);
-//			
-//			move();
-//			prevx=x+1;
-//			prevy=y+1;
-//			
-//			System.out.println("X: "+x+" Y: "+y);
-//			
-//		}else{
-//			setPosition(prevx,prevy);
-//		}
+//		move(posx,posy);
 		
 	}
 	
-	void move(){
-		if(EZInteraction.isKeyDown('s')){
-			setImagePosition(x,y++);
+	void move(int posx,int posy){
+		boolean destination=false;
+		posx=x;
+		posy=y;
+		
+		if (destination=true){
+		picture.translateTo(posx,posy);
+		destination=false;
 		}
-		if(EZInteraction.isKeyDown('w')){
-			setImagePosition(x,y--);
-		}
-		if(EZInteraction.isKeyDown('a')){
-			setImagePosition(x--,y);
-		}
-		if(EZInteraction.isKeyDown('d')){
-			setImagePosition(x++,y);
-		}
+//		translateTo(posx,posy);
+//		if(EZInteraction.isKeyDown('s')){
+//			setImagePosition(x,y++);
+//		}
+//		if(EZInteraction.isKeyDown('w')){
+//			setImagePosition(x,y--);
+//		}
+//		if(EZInteraction.isKeyDown('a')){
+//			setImagePosition(x--,y);
+//		}
+//		if(EZInteraction.isKeyDown('d')){
+//			setImagePosition(x++,y);
+//		}
 	}
 }
