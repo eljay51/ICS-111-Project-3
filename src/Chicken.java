@@ -26,7 +26,7 @@ public class Chicken extends Agent {
 		destx = randomGenerator.nextInt(800);
 		desty = randomGenerator.nextInt(768);
 		
-		picture = EZ.addImage("chicken.png", x, y);
+		picture = EZ.addImage("C.png", x, y);
 	}
 	
 	void introduceDronesToChicken(Drone[] drn, int ndrones){

@@ -13,7 +13,7 @@ public class Coop extends Agent {
 		x = 1024 - RADIUS*2;
 		y = 768/2;
 		
-		picture = EZ.addImage("coop.png", x, y);
+		picture = EZ.addImage("D.png", x, y);
 		picture.translateTo(x,y);
 	}
 	
@@ -31,7 +31,12 @@ public class Coop extends Agent {
 				chickens[i].setCooped(true);
 			}
 			if (chickens[i].isCooped()) count++;
+			
 		}
+		
 		return count;
+	
 	}
-}
+	
+	}
+
